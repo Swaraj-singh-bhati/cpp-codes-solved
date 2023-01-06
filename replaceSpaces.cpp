@@ -16,3 +16,21 @@ string replaceSpaces(string &str){
     }
     return temp;
 }
+
+//optimal solution
+
+#include <bits/stdc++.h> 
+string replaceSpaces(string &str)
+{
+    string ch = "@40";
+    
+    for( int i = 0; i < str.length(); i++)
+    {
+        
+        if( str[i] == ' ')
+        {
+            str.replace( i , 1 , ch);
+        }
+    }    
+    return str;
+}
