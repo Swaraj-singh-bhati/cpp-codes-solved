@@ -29,7 +29,8 @@ vector<int> &low, unordered_map<int, bool> &visited,
         }
         else
         {
-            //back edge
+         //node already visited and not a parent   
+         //back edge
             low[node] = min(low[node], disc[nbr]);
         }
     }
